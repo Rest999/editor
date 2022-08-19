@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{874626BC-7AEA-456E-86B5-2DD7FAC851CC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>WindowsFormsMMSF</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsMMSF</RootNamespace>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_Xpo_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="M\Lv05m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv20s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv05s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv25s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv10s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_rezonlist.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_NKGlist.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv15s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv30s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv01m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv10m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_readme.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv11s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv21s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv06m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv06s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv31s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv16s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv11m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv26s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv02m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv01s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv12s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv22s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv07m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv12m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_noiselist.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv07s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv27s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv17s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv02s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv32s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv03m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv08m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv23s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv13s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv08s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv13m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv28s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv03s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv18s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv04m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_rockman.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv09m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv24s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv14m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv09s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv29s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv14s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv04s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv15m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lv19s.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_SSSlistM.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv20m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv16m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv21m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv17m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3home.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_SSS.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv22m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_SSSlistS.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv18m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv23m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_wclist.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv19m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSF3_brorl.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M\Lv24m.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="M\Lv05m.resx">
+      <DependentUpon>Lv05m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv20s.resx">
+      <DependentUpon>Lv20s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv05s.resx">
+      <DependentUpon>Lv05s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv25s.resx">
+      <DependentUpon>Lv25s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv10s.resx">
+      <DependentUpon>Lv10s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_rezonlist.resx">
+      <DependentUpon>MMSF3_rezonlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_NKGlist.resx">
+      <DependentUpon>MMSF3_NKGlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv15s.resx">
+      <DependentUpon>Lv15s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv30s.resx">
+      <DependentUpon>Lv30s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv01m.resx">
+      <DependentUpon>Lv01m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv10m.resx">
+      <DependentUpon>Lv10m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_readme.resx">
+      <DependentUpon>MMSF3_readme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv11s.resx">
+      <DependentUpon>Lv11s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv21s.resx">
+      <DependentUpon>Lv21s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv06m.resx">
+      <DependentUpon>Lv06m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv06s.resx">
+      <DependentUpon>Lv06s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv31s.resx">
+      <DependentUpon>Lv31s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv16s.resx">
+      <DependentUpon>Lv16s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv11m.resx">
+      <DependentUpon>Lv11m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv26s.resx">
+      <DependentUpon>Lv26s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv02m.resx">
+      <DependentUpon>Lv02m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv01s.resx">
+      <DependentUpon>Lv01s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv12s.resx">
+      <DependentUpon>Lv12s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv22s.resx">
+      <DependentUpon>Lv22s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv07m.resx">
+      <DependentUpon>Lv07m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv12m.resx">
+      <DependentUpon>Lv12m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_noiselist.resx">
+      <DependentUpon>MMSF3_noiselist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv07s.resx">
+      <DependentUpon>Lv07s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv27s.resx">
+      <DependentUpon>Lv27s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv17s.resx">
+      <DependentUpon>Lv17s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv02s.resx">
+      <DependentUpon>Lv02s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv32s.resx">
+      <DependentUpon>Lv32s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv03m.resx">
+      <DependentUpon>Lv03m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv08m.resx">
+      <DependentUpon>Lv08m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv23s.resx">
+      <DependentUpon>Lv23s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv13s.resx">
+      <DependentUpon>Lv13s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv08s.resx">
+      <DependentUpon>Lv08s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv13m.resx">
+      <DependentUpon>Lv13m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv28s.resx">
+      <DependentUpon>Lv28s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv03s.resx">
+      <DependentUpon>Lv03s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv18s.resx">
+      <DependentUpon>Lv18s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv04m.resx">
+      <DependentUpon>Lv04m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_rockman.resx">
+      <DependentUpon>MMSF3_rockman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv09m.resx">
+      <DependentUpon>Lv09m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv24s.resx">
+      <DependentUpon>Lv24s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv14m.resx">
+      <DependentUpon>Lv14m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv09s.resx">
+      <DependentUpon>Lv09s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv29s.resx">
+      <DependentUpon>Lv29s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv14s.resx">
+      <DependentUpon>Lv14s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv04s.resx">
+      <DependentUpon>Lv04s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv15m.resx">
+      <DependentUpon>Lv15m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lv19s.resx">
+      <DependentUpon>Lv19s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_SSSlistM.resx">
+      <DependentUpon>MMSF3_SSSlistM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv20m.resx">
+      <DependentUpon>Lv20m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv16m.resx">
+      <DependentUpon>Lv16m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv21m.resx">
+      <DependentUpon>Lv21m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv17m.resx">
+      <DependentUpon>Lv17m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3home.resx">
+      <DependentUpon>MMSF3home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_SSS.resx">
+      <DependentUpon>MMSF3_SSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv22m.resx">
+      <DependentUpon>Lv22m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_SSSlistS.resx">
+      <DependentUpon>MMSF3_SSSlistS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv18m.resx">
+      <DependentUpon>Lv18m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv23m.resx">
+      <DependentUpon>Lv23m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_wclist.resx">
+      <DependentUpon>MMSF3_wclist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv19m.resx">
+      <DependentUpon>Lv19m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSF3_brorl.resx">
+      <DependentUpon>MMSF3_brorl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M\Lv24m.resx">
+      <DependentUpon>Lv24m.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_Xpo_icon.ico" />
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
